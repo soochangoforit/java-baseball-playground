@@ -24,4 +24,12 @@ public class Rule {
   }
 
 
+  public int hasNumberCount(List<Integer> computer, List<Integer> player) {
+    return (int) player.stream()
+        .filter(number -> computer.contains(number))
+        .count();
+  }
+
+
+
 }
