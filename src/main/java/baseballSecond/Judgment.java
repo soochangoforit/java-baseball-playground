@@ -8,11 +8,16 @@ public class Judgment {
 
     int count = 0;
     for (Integer number : players) {
-      if (computer.contains(number)) {
-        count++;
-      }
+      count = getCount(computer, count, number);
     }
 
+    return count;
+  }
+
+  private int getCount(List<Integer> computer, int count, Integer number) {
+    if (computer.contains(number)) {
+      count++;
+    }
     return count;
   }
 
