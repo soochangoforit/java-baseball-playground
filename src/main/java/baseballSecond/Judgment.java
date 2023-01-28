@@ -5,10 +5,18 @@ import java.util.List;
 public class Judgment {
 
   public int correctCount(List<Integer> computer, List<Integer> players) {
-    return 0;
+
+    int count = 0;
+    for (Integer number : players) {
+      if (computer.contains(number)) {
+        count++;
+      }
+    }
+
+    return count;
   }
 
-  public boolean hasPlace(int placeNumber, int number) {
+  public boolean hasPlace(List<Integer> computer, List<Integer> players) {
     return false;
   }
 
