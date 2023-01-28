@@ -21,8 +21,8 @@ public class Judgment {
     return count;
   }
 
-  public boolean hasPlace(List<Integer> computer, List<Integer> players) {
-    return false;
+  public boolean hasPlace(List<Integer> computer, int placeIndex, int number) {
+    return computer.get(placeIndex) == number;
   }
 
 }
